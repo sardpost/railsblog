@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@charset "UTF-8";
+
+
+
+body { 
+  font: normal .80em 'Droid Sans', arial, sans-serif;
+  background: #FFF;
+  color: #000;
+}
+
+p { 
+  padding: 0 0 16px 0;
+  line-height: 1.7em;
+}
+
+
+h1, h2, h3, h4, h5, h6 { 
+  color: #000;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+}
+
+
+blockquote { 
+  margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul { 
+  margin: 2px 0 22px 17px;
+}
+
+ul li { 
+  list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+ol { 
+  margin: 8px 0 22px 20px;
+}
+
+ol li { 
+  margin: 0 0 11px 0;
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 10px;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#main, #container, #logo, #site_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#main {
+  background: transparent;
+}
+
+
+nav { 
+  height: 44px;
+  margin: -44px auto 0 auto;
+} 
+
+
+#site_content { 
+  width: 1200px;
+  overflow: hidden;
+  margin: 0px auto 0 auto;
+  padding: 15px 0 25px 0;} 
+
+#sidebar_container { 
+  float: left;
+  width: 234px;
+  margin: 15px 0 0 5px;
+}
+
+#listing_posts {
+  width: 1200px;
+  padding: 10px 10 15px 0;
+   margin-left: auto; 
+  margin-right: auto;
+}
+
+footer {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+
+
