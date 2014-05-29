@@ -1,17 +1,48 @@
+ 
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <title>Simple Rails4 Blog</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <div id="main">
+<body data-spy="scroll" data-target="#mynav">
+<div id="wrap">
+  <nav id="mynav" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Simple Rails4 Blog</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+	  <li><%= link_to 'Home', root_path %></a>
+          <li><%= link_to 'About', page_path('about')%></a>
+          <li><a href="#second">Contact</a></li>
+          <li><%= link_to 'New Post', new_post_path %></a>          
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+ 
+ <br><br>
+ <div class="container">
+  <%= yield %>
+ <div>
 
-<%= yield %>
-
-<footer></footer>
+  </div>
 </div>
+<br> 
+<div id="footer">
+  <div class="container">
+    <p class="text-muted credit">Copyright Davide Puggioni <a href="http://sardpost.blogspot.com">Sardpost</a>.</p>
+  </div>
+</div>
+ 
 </body>
 </html>
